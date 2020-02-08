@@ -1,0 +1,306 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> personal trainer appoientment form</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	 <script src="storage.js"></script>
+	 
+	 <script type="text/javascript">
+ 	
+		function calculate (obj){
+			document.getElementById("cost1").innerHTML = obj.value;
+		//	document.getElementById("cost2").innerHTML = obj.value;
+   
+		}
+	</script>
+	<script type="text/javascript">
+
+	    function trainee(){
+
+
+		}
+		 
+	</script>
+</head>
+  
+<body>
+     <div  class="comtainer-fuid bg-light" >
+
+            <img src="https://previews.123rf.com/images/sylverarts/sylverarts1704/sylverarts170400375/76004069-gym-and-fitness-logo-template-retro-style-vector-emblem-with-barbell-and-strong-hand-fist-.jpg" width= " 80" height="80"  class="d-inline-block align-left" alt=" logo image" />
+     </div>
+     
+     <header>
+          <div class="wrapper">
+        <div class="sliding-background"></div>
+         </div>
+          <div class="container-flud">
+             <nav  class="navbar navbar-expand-lg navbar-light " style="background-color:gold;font-weight: bold;">
+                 <button  class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent"aria-controls="           navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span> </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <div class="navbar-nav m-auto">
+                
+                            <a href="index.html " class=" nav-item nav-link m-auto"> Home</a>
+                            <a href="form.html"class=" nav-item nav-link m-auto"> PlaceAppointment</a>
+                            <a href="viewtable.html"class=" nav-item nav-link m-auto">View Appointment</a>
+                            <a href="newcontact.html"class=" nav-item nav-link m-auto">Contact Us</a>
+
+                       </div>
+                  </div>
+
+             </nav>
+
+          </div>
+
+     </header>
+ <!-- side bar -->
+     <div class="sidebar mt-3">
+         <a href="index.html "> Home</a>
+        <a href="form.html">PlaceAppointment</a>
+        <a href="viewtable.html">ViewAppointment</a>
+        <a href="#newcontact.html">Contact Us</a>
+    </div>
+    <br/>
+
+<div class="container">
+    <div class="row ">
+        <div class="col">
+       
+
+           <div class="card shadow " >
+               
+                <div class="card-body bg-light">
+                    
+                     <form class="col">
+                     	  <div class="input-group">
+                               <h3 style="font-family: cursive;font-weight: bold"> Appointment Form</h3>
+                          </div>
+                      
+                       <div class="input-group mt-3 mb-3" >
+                                    <div class="input-group-prepend ">
+                                       <span class="input-group-text">Name</span>
+                                    </div>
+                                    <input type="text"  autofocus="firstname" name="firstname"   pattern='[A-Za-z\\s]*' id="firstname"   placeholder="Firstname" required/> &nbsp;&nbsp;
+                                    <input type="text" name="lastname"  pattern='[A-Za-z\\s]*' id="lastname" placeholder="LastName" required/> 
+                        </div>
+
+                        <div class="input-group mt-3 mb-3">
+                        	 <div class="input-group-prepend">
+                        	 	 <span class=" input-group-text"> Age</span>
+                        	 </div>
+                        	    <input max="60" min="18" type="number" name="Age" id="Age" placeholder="Enter age" required/> &nbsp;&nbsp;
+                        	
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Email</span>
+                          
+                            <input type="email" name="mail" id="mail" placeholder="Mail" required/>
+                        </div> &nbsp; &nbsp;
+
+                         <div class="input-group-prepend">
+                                <span class="input-group-text"id="contact"  name="contact"/>+91</span>
+
+                    
+                                <input  type="text" id=" first" size="1" maxlength="1" />     
+								<input type="text" id=" second" size="1" maxlength="1" />
+								<input type="text" id=" third" size="1" maxlength="1" />
+								<input type="text" id="fourth" size="1" maxlength="1" /> 
+								<input type="text" id=" fifth" size="1" maxlength="1" />     
+								<input type="text" id=" sixth" size="1" maxlength="1" />
+								<input type="text" id=" seventh" size="1" maxlength="1"/>
+								<input type="text" id="eighth" size="1" maxlength="1" /> 
+								<input type="text" id=" ninth" size="1" maxlength="1" />
+								<input type="text" id="tenth" size="1" maxlength="1" /> 
+						</div>
+					</div>
+						<hr>
+                       <div>
+						 <h3 style="font-weight: bold;font-family: cursive;">Address</h3>
+
+						</div>
+
+
+						<div class="input-group-prepend">
+                            <span  class="input-group-text">Street address</span>
+         
+			                  <input type="text" placeholder="Address" id="address" class="form-control" required/>
+			            </div>
+			            <br>
+
+                        <div class="input-group-prepend">
+                        	<span class="input-group-text">City</span>
+
+                        	 <input type="text" id="city" placeholder="City"  required/>&nbsp;
+					
+						<div class="input-group-prepend">
+                        	<span class="input-group-text" >State</span>
+
+                        	 <input type="text" placeholder="state" id="state" required/>
+						</div>	&nbsp;
+
+						<div class="input-group-prepend col-5">
+							<span class="input-group-text" id="country">Country</span>
+									
+									<select id="Country">
+									  <option value="India">India</option>
+									  <option value="USA">USA</option>
+									  <option value="Germany">Germany</option>
+									  <option value="France">France</option>
+									</select>
+						
+								<div class="input-group-prepend col-5">
+									<span class="input-group-text"> Pincode</span>
+							<input type="text" placeholder="Pincode" >
+					</div>
+			</div>
+ </div>
+ 
+</fieldset>
+			
+<hr>
+<div>
+	 <h3 style="font-weight: bold;font-family: cursive;">Trainer Preference</h3>
+
+	</div>
+
+	<div>
+		<input type="radio" id="Male"     name="gender"  value="male"  onclick="funM()" > Male Trainer<br>
+		<input type="radio" id="FeMale"   name="gender"  value="female" onclick="funF()"    > Female Trainer<br>
+		<input type="radio" id="None"     name="gender"  value="Nopreference" onclick="funN()"> No preference<br>
+
+
+
+	 <!-- 
+		<input type="radio" id="Tname"    name="Trainername" value="Trainername"onclick="EnableDisableTextBox()" >Trainername   <input type="text" name="Trainername"  id=" Tn" disabled="disabled"/>
+		
+	
+
+		  <input type="radio" name="Others"  id=" Others" value="other" onclick="EnableDisableTextBox()">Others <input type="text" id="Ot" name="Others" disabled="disabled"/>  
+-->
+	</div>
+	<br>
+	<div>
+		<h3 style="font-weight: bold;font-family: cursive;">Do you need physiotherepist ?</h3>
+
+		<input type="radio" id="yes"  name="yes" value="yes"> yes
+		<input type="radio" id="no"   name="yes" value=" yes"> No
+
+	</div>
+	<hr>
+
+	<div>
+		<h3 style="font-weight: bold;font-family: cursive;">Appointment : (free)</h3>
+	</div>
+	<hr>
+<center>
+	<table class="input-group-sm" border="1px" id="table">
+					  
+					  <tr>
+						<td scope="col" style="text-align: center;">Day </td>
+						<th scope="col">7:00am to 9:00am</th>
+						<th scope="col">9:00 am to 11:00am</th>
+						<th scope="col">11:00am to 1:00pm</th>
+						<th scope="col">1:00pm to 3:00pm</th>
+						<th scope="col">3:00pm to5:00pm</th>
+					  </tr>
+					  <tr  style="text-align: center;">
+						<th scope="row"> Monday</th>
+						<td><input type="radio" id="1" name="1" value="1">1</td>
+						<td><input type="radio" id="2" name="1" value="1">2</td>
+						<td><input type="radio" id="3" name="1" value="1">3</td>
+						<td><input type="radio" id="4" name="1" value="1">4</td>
+						<td><input type="radio" id="5" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row"> Tuseday</th>
+						<td><input type="radio" id="6" name="1" value="1">1</td>
+						<td><input type="radio" id="7" name="1" value="1">2</td>
+						<td><input type="radio" id="8" name="1" value="1">3</td>
+						<td><input type="radio" id="9" name="1" value="1">4</td>
+						<td><input type="radio" id="10" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row"> Wedneseday</th>
+						<td><input type="radio" id="11" name="1" value="1">1</td>
+						<td><input type="radio" id="12" name="1" value="1">2</td>
+						<td><input type="radio" id="13" name="1" value="1">3</td>
+						<td><input type="radio" id="14" name="1" value="1">4</td>
+						<td><input type="radio" id="15" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row">Thursday</th>
+						<td><input type="radio" id="16" name="1" value="1">1</td>
+						<td><input type="radio" id="17" name="1" value="1">2</td>
+						<td><input type="radio" id="18" name="1" value="1">3</td>
+						<td><input type="radio" id="19" name="1" value="1">4</td>
+						<td><input type="radio" id="20" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row"> Friday</th>
+						<td><input type="radio" id="21" name="1" value="1">1</td>
+						<td><input type="radio" id="22" name="1" value="1">2</td>
+						<td><input type="radio" id="23" name="1" value="1">3</td>
+						<td><input type="radio" id="24" name="1" value="1">4</td>
+						<td><input type="radio" id="25" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row"> Saturday</th>
+						<td><input type="radio" id="26" name="1" value="1">1</td>
+						<td><input type="radio" id="27" name="1" value="1">2</td>
+						<td><input type="radio" id="28" name="1" value="1">3</td>
+						<td><input type="radio" id="29" name="1" value="1">4</td>
+						<td><input type="radio" id="30" name="1" value="1">5</td>
+					  </tr>
+					  <tr style="text-align: center;">
+						<th scope="row"> sunday</th>
+						<td><input type="radio" id="31" name="1" value="1">1</td>
+						<td><input type="radio" id="32" name="1" value="1">2</td>
+						<td><input type="radio" id="33" name="1" value="1">3</td>
+						<td><input type="radio" id="34" name="1" value="1">4</td>
+						<td><input type="radio" id="35" name="1" value="1">5</td>
+					  </tr>
+					 
+	</table>
+
+</center>
+<hr>
+
+<div>
+ <h3 style="font-weight: bold;font-family: cursive;">Select a package: </h3>
+</div>
+<div class="text-align">
+	<input type="radio" id="pack1"   name="cost"   value="500rps"  onclick="calculate(this);">one time assesment (RS.500)<br>
+	<input type="radio" id="pack2"   name="cost"   value="pack400"  onclick="calculate(this);">4 weeks sessions per session  (rs.400)<br>
+	<input type="radio" id="pack3"   name="cost"   value="pack300"  onclick="calculate(this);"> 12 weeks sessions per session( rs.300) <br>                                   	
+	<input type="radio" name="cost" value=" "onclick="calculate(this)";>others 
+	<input  type="text" name="cost" id="empty"><label> Quote will be shared on phone call</label>
+
+
+<div class="row">
+<div class="col">
+
+<div class="col-4">		
+Quote:  <output type="text" name="cost" id="cost1" value=" " size="3" readonly="readonly"></output>
+<label >INR</label>.
+
+<output type="text" name="cost" id=" cost2" value="" size="3" readonly="readonly"></output>
+<label >Paise</label>
+</div>
+</div>
+</div>
+</div>
+<button type="button"  btn-btn-sm class="btn btn-primary" onclick="fitnessTracker()">Submit</button>
+
+</div>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
