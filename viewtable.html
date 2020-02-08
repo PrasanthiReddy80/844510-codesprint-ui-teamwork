@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+</head>
+<body>
+     <div  class="comtainer-fuid bg-light" >
+
+            <img src="https://previews.123rf.com/images/sylverarts/sylverarts1704/sylverarts170400375/76004069-gym-and-fitness-logo-template-retro-style-vector-emblem-with-barbell-and-strong-hand-fist-.jpg" width= " 80" height="80"  class="d-inline-block align-left" alt=" logo image" />
+     </div>
+     
+     <header>
+          <div class="wrapper">
+        <div class="sliding-background"></div>
+         </div>
+          <div class="container-flud">
+             <nav  class="navbar navbar-expand-lg navbar-light " style="background-color:gold;font-weight: bold;">
+                 <button  class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent"aria-controls="           navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span> </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <div class="navbar-nav m-auto">
+                
+                            <a href="index.html " class=" nav-item nav-link m-auto"> Home</a>
+                            <a href="form.html"class=" nav-item nav-link m-auto"> PlaceAppointment</a>
+                            <a href="viewtable.html"class=" nav-item nav-link m-auto">View Appointment</a>
+                            <a href="newcontact.html"class=" nav-item nav-link m-auto">Contact Us</a>
+
+                       </div>
+                  </div>
+
+             </nav>
+
+          </div>
+
+     </header>
+ <!-- side bar -->
+     <div class="sidebar mt-3">
+         <a href="index.html "> Home</a>
+        <a href="form.html">PlaceAppointment</a>
+        <a href="viewtable.html">ViewAppointment</a>
+        <a href="newcontact.html">Contact Us</a>
+    </div>
+    <br/>
+
+
+
+
+
+
+    <div class="container">
+        <table class="table" align="center">
+        
+            <tr id="titleRow">
+                <th> Name </th>
+                <th>Address </th>
+                <th> city </th>
+                <th> Phone </th>
+                <th>package</th>
+                <th>trainerpreference</th>
+            </tr>
+            <tbody id="enrolled"></tbody>
+        
+        <script>
+            var fitnessArray = getFitnessArray();
+            for(i=0;i<fitnessArray.length;i++){
+                var fit=fitnessArray[i];
+                createSchedule(fit);
+            }
+        
+            function createSchedule(fitness){
+            var table=document.getElementById("enrolled");
+            var row=document.createElement("tr");
+            var cell1=document.createElement("td");
+            var cell2=document.createElement("td");
+            var cell3=document.createElement("td");
+            var cell4=document.createElement("td");
+            var cell5=document.createElement("td");
+            var cell6=document.createElement("td");
+           
+        
+            cell1.innerHTML=fitness.firstname;
+            cell2.innerHTML=fitness.address;
+            cell3.innerHTML=fitness.city;
+            cell4.innerHTML=fitness.phone;
+            cell5.innerHTML=fitness.package;
+            cell6.innerHTML=fitness.trainerpreference;
+        
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            row.appendChild(cell3);
+            row.appendChild(cell4);
+            row.appendChild(cell5);
+            row.appendChild(cell6);
+            
+        
+            table.appendChild(row);
+        }
+        function getFitnessArray(){
+            return JSON.parse(localStorage.getItem("fitness"));
+        }
+        
+        </script>
+        
+        </table>
+        
+        </div>
+</body>
+</html>
